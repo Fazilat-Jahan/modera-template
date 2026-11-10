@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-navy antialiased; }
+
+@layer components {
+  .btn { @apply inline-flex items-center gap-2 bg-brand px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-orange-600; }
+  .h2 { @apply text-3xl font-bold uppercase leading-tight md:text-4xl; }
+  .tag { @apply mb-4 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-widest before:h-3 before:w-[3px] before:bg-brand before:content-['']; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
